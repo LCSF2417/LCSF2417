@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #4a4a4b;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav .navbar li {
+    display: inline;
+}
+
+nav .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav .navbar a:hover {
+    background-color: #0073e6;
+    border-radius: 5px;
+}
+
+
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.who-we-are {
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #ffffff;
+    border: 2px solid #0074d9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team-member figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.team-side {
+    background-color: #eef2f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.team-side h3 {
+    color: #0074d9;
+    font-size: 1.5rem;
+}
+
+.team-side p {
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .team-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-side {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .team-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
